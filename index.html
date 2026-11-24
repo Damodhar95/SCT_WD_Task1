@@ -1,77 +1,741 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Landing Page</title>
+
+    <meta name="description" content="Tech Innovators creates modern digital solutions through web development, cloud computing and mobile applications.">
+
+    <meta name="theme-color" content="#0b1020">
+
+    <title>Tech Innovators | Digital Innovation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="task1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
 
+    <!-- Background Effects -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+
+    <!-- NAVIGATION -->
     <header id="navbar">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+        <nav class="nav-container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">
+                    <i class="fas fa-microchip"></i>
+                </span>
+
+                Tech<span class="logo-highlight">Innovators</span>
+            </a>
+
+            <button class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links">
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+
+                <li>
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link nav-contact">Contact Us</a>
+                </li>
+
             </ul>
+
         </nav>
+
     </header>
-    <section id="home">
-        <div class="content">
-            <h1>Welcome to Tech Innovators</h1>
-            <p>Bringing the future of technology to life with innovative solutions in web development, Cloud Computing, and Mobile App Development.</p>
-            <a href="#about" class="btn">More</a>
-        </div>
-        </section>
 
-    <section id="about">
-        <div class="content">
-            <h1>About us</h1>
-            <p>At Tech Innovators, we harness the power of cutting-edge technologies to solve complex business challenges. Since 2024, we have been the trusted technology partner for businesses globally, delivering state-of-the-art digital solutions.</p>
-        </div>
-        </section>
 
-    <section id="services">
-        <div class="content">
-            <h1>Our Services</h1>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-container">
+
+            <!-- Hero Text -->
+            <div class="hero-content">
+
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    INNOVATION STARTS HERE
+                </div>
+
+                <h1>
+                    Building a Smarter
+                    <span>Digital Future.</span>
+                </h1>
+
+                <p class="hero-description">
+                    We transform ambitious ideas into powerful digital
+                    experiences through web development, cloud computing
+                    and next-generation mobile applications.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#services" class="btn primary-btn">
+                        Explore Services
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#about" class="btn secondary-btn">
+                        Discover More
+                    </a>
+
+                </div>
+
+                <!-- Statistics -->
+                <div class="hero-stats">
+
+                    <div class="stat-item">
+                        <h3>03<span>+</span></h3>
+                        <p>Technology Domains</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3>2024</h3>
+                        <p>Established</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3>100<span>%</span></h3>
+                        <p>Innovation Focus</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Dashboard -->
+            <div class="hero-visual">
+
+                <div class="dashboard-glow"></div>
+
+                <div class="dashboard-window">
+
+                    <!-- Dashboard Topbar -->
+                    <div class="dashboard-header">
+
+                        <div class="dashboard-brand">
+                            <span class="dashboard-brand-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </span>
+
+                            Tech Analytics
+                        </div>
+
+                        <div class="window-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Dashboard Content -->
+                    <div class="dashboard-body">
+
+                        <div class="dashboard-title">
+
+                            <div>
+                                <h3>Dashboard Overview</h3>
+                                <p>Illustrative analytics preview</p>
+                            </div>
+
+                            <span class="live-badge">
+                                <span></span> LIVE
+                            </span>
+
+                        </div>
+
+
+                        <!-- Metric Cards -->
+                        <div class="metric-grid">
+
+                            <div class="metric-card">
+
+                                <div class="metric-top">
+                                    <span>Revenue</span>
+                                    <i class="fas fa-wallet"></i>
+                                </div>
+
+                                <h3>$48.5K</h3>
+
+                                <small>
+                                    <i class="fas fa-arrow-up"></i>
+                                    12.8% growth
+                                </small>
+
+                            </div>
+
+
+                            <div class="metric-card">
+
+                                <div class="metric-top">
+                                    <span>Active Users</span>
+                                    <i class="fas fa-users"></i>
+                                </div>
+
+                                <h3>2,840</h3>
+
+                                <small>
+                                    <i class="fas fa-arrow-up"></i>
+                                    8.4% growth
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Chart -->
+                        <div class="chart-panel">
+
+                            <div class="chart-heading">
+
+                                <div>
+                                    <strong>Performance Analytics</strong>
+                                    <p>Monthly overview</p>
+                                </div>
+
+                                <i class="fas fa-ellipsis"></i>
+
+                            </div>
+
+                            <div class="chart">
+
+                                <div class="chart-grid"></div>
+
+                                <div class="chart-bar" style="--bar-height:35%"></div>
+                                <div class="chart-bar" style="--bar-height:52%"></div>
+                                <div class="chart-bar" style="--bar-height:42%"></div>
+                                <div class="chart-bar" style="--bar-height:70%"></div>
+                                <div class="chart-bar" style="--bar-height:58%"></div>
+                                <div class="chart-bar" style="--bar-height:88%"></div>
+                                <div class="chart-bar" style="--bar-height:73%"></div>
+                                <div class="chart-bar" style="--bar-height:100%"></div>
+
+                            </div>
+
+                            <div class="chart-labels">
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>May</span>
+                                <span>Jun</span>
+                                <span>Jul</span>
+                                <span>Aug</span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Dashboard Footer -->
+                        <div class="dashboard-footer">
+
+                            <span>
+                                <span class="status-dot"></span>
+                                All systems operational
+                            </span>
+
+                            <i class="fas fa-shield-alt"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Floating Information Cards -->
+                <div class="floating-card floating-top">
+
+                    <span class="floating-icon">
+                        <i class="fas fa-cloud"></i>
+                    </span>
+
+                    <div>
+                        <strong>Cloud Powered</strong>
+                        <small>Scalable solutions</small>
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card floating-bottom">
+
+                    <span class="floating-icon purple-icon">
+                        <i class="fas fa-code"></i>
+                    </span>
+
+                    <div>
+                        <strong>Smart Technology</strong>
+                        <small>Built for tomorrow</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-bottom-text">
+            <span>SCROLL TO EXPLORE</span>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section-padding">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span class="section-label">WHO WE ARE</span>
+
+                <h2>
+                    Technology Meets
+                    <span>Creativity.</span>
+                </h2>
+
+                <p>
+                    We believe technology should simplify life,
+                    empower businesses and create limitless possibilities.
+                </p>
+
+            </div>
+
+
+            <div class="about-container">
+
+                <div class="about-visual">
+
+                    <div class="about-main-card">
+
+                        <div class="about-icon-large">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+
+                        <span>THINK DIFFERENTLY</span>
+
+                        <h3>
+                            Ideas today.
+                            <br>
+                            Innovations tomorrow.
+                        </h3>
+
+                        <div class="about-decoration"></div>
+
+                    </div>
+
+                    <div class="about-floating-icon icon-one">
+                        <i class="fas fa-brain"></i>
+                    </div>
+
+                    <div class="about-floating-icon icon-two">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <span class="about-mini-label">OUR VISION</span>
+
+                    <h3>
+                        Turning Ideas Into
+                        <span>Digital Reality.</span>
+                    </h3>
+
+                    <p>
+                        At Tech Innovators, we harness modern technologies
+                        to solve complex business challenges and create
+                        meaningful digital experiences.
+                    </p>
+
+                    <p>
+                        From responsive websites to scalable cloud
+                        infrastructure and mobile applications, we focus
+                        on building reliable and user-friendly solutions.
+                    </p>
+
+
+                    <div class="about-features">
+
+                        <div>
+                            <i class="fas fa-check-circle"></i>
+                            Modern Technologies
+                        </div>
+
+                        <div>
+                            <i class="fas fa-check-circle"></i>
+                            User-Centric Design
+                        </div>
+
+                        <div>
+                            <i class="fas fa-check-circle"></i>
+                            Scalable Solutions
+                        </div>
+
+                        <div>
+                            <i class="fas fa-check-circle"></i>
+                            Continuous Innovation
+                        </div>
+
+                    </div>
+
+
+                    <a href="#contact" class="text-link">
+                        Let's Work Together
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services section-padding">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span class="section-label">WHAT WE DO</span>
+
+                <h2>
+                    Solutions That
+                    <span>Move You Forward.</span>
+                </h2>
+
+                <p>
+                    We combine creativity and technology to deliver
+                    digital solutions for modern businesses.
+                </p>
+
+            </div>
+
+
             <div class="service-cards">
-                <div class="card">
-                    <h2>Web Development</h2>
-                    <p>We build responsive and scalable websites using the latest frameworks like React, Angular,and Node.js to meet your business needs.</p>
-                </div>
-                <div class="card">
-                    <h2>Cloud Computing</h2>
-                    <p>Cloud Computing Offering secure and scalable cloud infrastructure services to support global business operations and remote workforces.</p>
-                </div>
-                <div class="card">
-                    <h2>Mobile App</h2>
-                    <p>Delivering top-notch mobile apps with seamless user experience, utilizing A1, AR, and more for iOS and Android platforms.</p>
-                </div>
-            </div>
-        </div> 
-        </section>
 
-    <section id="contact">
-        <div class="content">
-            <h1>Contact Us</h1>
-            <p>Ready to bring your ideas to life?<br> Reach out to us for consultation or partnership opportunities.</p>
-            <p> Email: realgeniustechn0275@gmail.com</p>
-            <p>Phone: +123 456 7890</p>
-            <p> Address: Bangalore, Karnataka</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/damodhar-s" target="_blank">
-                    <i class="fab fa-linkedin"></i>LinkedIn
-                </a>
-                <a href="https://github.com/Damodhar95" target="_blank">
-                    <i class="fab fa-github"></i>GitHub
-                </a>
+
+                <!-- Service 1 -->
+                <article class="service-card">
+
+                    <div class="service-card-top">
+                        <span class="service-number">01</span>
+
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Create modern, responsive and scalable websites
+                        using HTML, CSS, JavaScript and modern frameworks.
+                    </p>
+
+                    <div class="service-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="#contact" class="service-link">
+                        Explore Service
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+
+                <!-- Service 2 -->
+                <article class="service-card featured-card">
+
+                    <div class="popular-label">
+                        TECHNOLOGY
+                    </div>
+
+                    <div class="service-card-top">
+                        <span class="service-number">02</span>
+
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+
+                    <h3>Cloud Computing</h3>
+
+                    <p>
+                        Build secure, flexible and scalable cloud
+                        infrastructure to improve business efficiency.
+                    </p>
+
+                    <div class="service-tags">
+                        <span>Cloud</span>
+                        <span>Security</span>
+                        <span>Scalability</span>
+                    </div>
+
+                    <a href="#contact" class="service-link">
+                        Explore Service
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+
+                <!-- Service 3 -->
+                <article class="service-card">
+
+                    <div class="service-card-top">
+                        <span class="service-number">03</span>
+
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-screen-button"></i>
+                        </div>
+                    </div>
+
+                    <h3>Mobile App Development</h3>
+
+                    <p>
+                        Develop intuitive mobile applications with
+                        seamless experiences across Android and iOS.
+                    </p>
+
+                    <div class="service-tags">
+                        <span>Android</span>
+                        <span>iOS</span>
+                        <span>Mobile UX</span>
+                    </div>
+
+                    <a href="#contact" class="service-link">
+                        Explore Service
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </article>
+
+
             </div>
+
         </div>
-        </section>
 
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact section-padding">
+
+        <div class="section-container">
+
+            <div class="contact-container">
+
+                <div class="contact-content">
+
+                    <span class="section-label">LET'S CONNECT</span>
+
+                    <h2>
+                        Have an Idea?
+                        <span>Let's Build It.</span>
+                    </h2>
+
+                    <p>
+                        Every great project starts with a conversation.
+                        Connect with us and let's explore the possibilities
+                        of technology together.
+                    </p>
+
+
+                    <div class="contact-details">
+
+                        <a href="mailto:realgeniustechn0275@gmail.com"
+                           class="contact-detail">
+
+                            <span class="contact-detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+
+                            <div>
+                                <small>EMAIL US</small>
+                                <strong>realgeniustechn0275@gmail.com</strong>
+                            </div>
+
+                        </a>
+
+
+                        <div class="contact-detail">
+
+                            <span class="contact-detail-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </span>
+
+                            <div>
+                                <small>LOCATION</small>
+                                <strong>Bangalore, Karnataka, India</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="social-links">
+
+                        <a href="https://www.linkedin.com/in/damodhar-s"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+
+                            <i class="fab fa-linkedin-in"></i>
+
+                        </a>
+
+
+                        <a href="https://github.com/Damodhar95"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+
+                            <i class="fab fa-github"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact Card -->
+                <div class="contact-card">
+
+                    <div class="contact-card-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+
+                    <span>YOUR NEXT PROJECT</span>
+
+                    <h3>
+                        Let's turn your vision into something extraordinary.
+                    </h3>
+
+                    <p>
+                        Have questions or a new idea?
+                        We'd love to hear from you.
+                    </p>
+
+                    <a href="mailto:realgeniustechn0275@gmail.com"
+                       class="btn primary-btn contact-button">
+
+                        Start a Conversation
+                        <i class="fas fa-arrow-right"></i>
+
+                    </a>
+
+                    <div class="contact-card-decoration"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <a href="#home" class="logo footer-logo">
+
+                <span class="logo-icon">
+                    <i class="fas fa-microchip"></i>
+                </span>
+
+                Tech<span class="logo-highlight">Innovators</span>
+
+            </a>
+
+            <p>
+                Building digital possibilities through innovation.
+            </p>
+
+            <div class="footer-bottom">
+
+                <span>
+                    &copy; 2026 Tech Innovators. All rights reserved.
+                </span>
+
+                <span>
+                    Designed with <i class="fas fa-heart"></i>
+                    and innovation.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <!-- JavaScript -->
     <script src="task1.js"></script>
+
 </body>
 </html>
